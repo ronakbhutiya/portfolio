@@ -12,19 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>PORTFOLIO</title>
 </head>
 
 <body>
-    <main>
-        <header class="header">
+
+    <header class="header" id="home">
+        <div class="container">
             <div class="header-nav">
                 <p class="logo">R</p>
                 <nav class="navigation">
                     <ul class="nav-list">
-                        <li><a class="nav-link" href="#">Home</a></li>
+                        <li><a class="nav-link" href="#home">Home</a></li>
                         <li><a class="nav-link" href="#about">About</a></li>
-                        <li><a class="nav-link" href="#">Skill</a></li>
+                        <li><a class="nav-link" href="#skill">Skill</a></li>
                         <li><a class="nav-link" href="#">Project</a></li>
                         <li><a class="nav-link" href="#">Contact</a></li>
                     </ul>
@@ -35,10 +36,11 @@
                 <p class=" header-main">RONAK</p>
                 <P class="heading-primary ">BHUTIYA</P>
             </div>
+        </div>
 
-
-        </header>
-        <section class="section-about" id="about">
+    </header>
+    <main>
+        <section class="section-about container" id="about">
             <div class="about-text-box">
                 <h1 class="about-header">About Me</h1>
                 <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aspernatur
@@ -55,10 +57,32 @@
 
             <img class="photo" src="my photo.jpg" alt="my photo">
         </section>
-        <section class="skill">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+        <section class="section-skill" id="skill">
+            <div class="container skill-container">
+                <div class="skill-box">
+                    <img class="skill-logo" src="html-file-type-svgrepo-com.svg" alt="">
+                    <p class="skill-heading">html</p>
+                    <p class="skill-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                        maxime, ex
+                        similique fugit
+                        itaque unde </p>
+                </div>
+                <div class="skill-box">
+                    <img class="skill-logo" src="css-svgrepo-com.svg" alt="">
+                    <p class="skill-heading bg-color-css">css</p>
+                    <p class="skill-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                        maxime, ex
+                        similique fugit
+                        itaque unde </p>
+                </div>
+                <div class="skill-box"> <img class="skill-logo" src="javascript-file-svgrepo-com.svg" alt="">
+                    <p class="skill-heading java">java script</p>
+                    <p class="skill-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                        maxime, ex
+                        similique fugit
+                        itaque unde </p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
