@@ -26,10 +26,14 @@
                         <li><a class="nav-link" href="#home">Home</a></li>
                         <li><a class="nav-link" href="#about">About</a></li>
                         <li><a class="nav-link" href="#skill">Skill</a></li>
-                        <li><a class="nav-link" href="#">Project</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
+                        <li><a class="nav-link" href="#project">Project</a></li>
+                        <li><a class="nav-link" href="#foo">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="mobile-navbar-btn">
+                    <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+                    <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+                </div>
             </div>
             <div class="heading-center">
                 <p class="header-text">Hi I'M</p>
@@ -42,7 +46,7 @@
     <main>
         <section class="section-about container" id="about">
             <div class="about-text-box">
-                <h1 class="about-header">About Me</h1>
+                <h1 class="heading__secondry">About Me</h1>
                 <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aspernatur
                     culpa libero veniam,
                     quaerat laborum amet earum ut obcaecati sint officia possimus doloremque consequuntur nisi dolorem!
@@ -51,13 +55,13 @@
                     <a class="btn" href="./CV.pdf" target="_blank">Dawnload CV</a>
                     <a class="btn btn-margin" href="mailto:ronakbhutiya123@gmail.com" target="_blank">Hire Me</a>
                 </div>
-
-
             </div>
-
             <img class="photo" src="my photo.jpg" alt="my photo">
         </section>
         <section class="section-skill" id="skill">
+            <div class="center">
+                <p class="heading__secondry">skill</pc>
+            </div>
             <div class="container skill-container">
                 <div class="skill-box">
                     <img class="skill-logo" src="html-file-type-svgrepo-com.svg" alt="">
@@ -84,7 +88,75 @@
                 </div>
             </div>
         </section>
+        <section class="section__project" id="project">
+            <div class="container">
+                <div class="center">
+                    <p class="heading__secondry">Project</p>
+                </div>
+                <div class="grid">
+                    <div class="project__box">
+                        <img src="mexent.jpg" alt="mexent img" class="project__img">
+                        <p class="project_heading">Mexent</p>
+                        <div>
+                            <a href="https://maxant.netlify.app/" target="_blank" class="btn__text">Live View</a>
+                            <a href="https://github.com/ronakbhutiya/Maxant" target="_blank" class="btn__text">Source
+                                Code</a>
+                        </div>
+
+                    </div>
+                    <div class="project__box">
+                        <img src="sixteenclothing.jpg" alt="sixteenclothing img" class="project__img">
+                        <p class="project_heading">sixteenclothing</p>
+                        <div>
+                            <a href="https://sixclothing.netlify.app/" target="_blank" class="btn__text">Live View</a>
+                            <a href="https://github.com/ronakbhutiya/Sixteenclothing" target="_blank"
+                                class="btn__text">Source Code</a>
+                        </div>
+
+                    </div>
+                    <div class="project__box">
+                        <img src="earbuds.png" alt="earbuds img" class="project__img">
+                        <p class="project_heading">PR-4
+                            EARBUDS</p>
+                        <div>
+                            <a href="https://pr-4earbuds.netlify.app/" target="_blank" class="btn__text">Live View</a>
+                            <a href="https://github.com/ronakbhutiya/EARBUDS" target="_blank" class="btn__text">Source
+                                Code</a>
+                        </div>
+
+                    </div>
+                    <div class="project__box">
+                        <img src="sports hub.png" alt="sports img" class="project__img">
+                        <p class="project_heading">Sporthub</p>
+                        <div>
+                            <a href="https://sportshubweb.netlify.app/" target="_blank" class="btn__text">Live View</a>
+                            <a href="https://github.com/ronakbhutiya/SPORTHUB" target="_blank" class="btn__text">Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer " id="footer">
+            <div class="footer__container">
+                <div class="center">
+                    <p class="heading__secondry">CONTACT US</p>
+                </div>
+                <div class="flex">
+                    <a href="https://github.com/ronakbhutiya?tab=repositories" target="_blank"><img
+                            src="icons8-git-50.png" alt="" class="footer__icon"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="whatsapp-svgrepo-com.svg" alt=""
+                            class="footer__icon"></a>
+                    <a href="https://www.instagram.com/naughty_kanudo.3/?next=%2F" target="_blank"><img
+                            src="insta-svgrepo-com.svg" alt="" class="footer__icon"></a>
+                </div>
+                <p class="footer__text">Created by ronak bhutiya😎</p>
+            </div>
+        </footer>
     </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js.js"></script>
 </body>
 
 </html>
