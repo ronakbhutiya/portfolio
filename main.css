@@ -6,7 +6,6 @@
 
 main {
   background-image: linear-gradient(to right bottom, #0b0b0b, #333030);
-  padding: 0 2rem;
 }
 
 html {
@@ -27,8 +26,8 @@ body {
 }
 .mobile-nav-icon {
   color: rgb(179, 179, 183);
-  width: 3rem;
-  height: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
   background-color: transparent;
 }
 .mobile-nav-icon[name="close-outline"] {
@@ -171,6 +170,8 @@ body {
   width: 85%;
   justify-self: end;
   opacity: 0.7;
+  height: 100%;
+  object-fit: cover;
 }
 
 .heading__secondry {
@@ -185,8 +186,16 @@ body {
 }
 
 .about-text {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #fff;
+}
+span {
+  color: #ff004f;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.margin {
+  margin-top: 2rem;
 }
 
 .btn:link,
@@ -231,6 +240,9 @@ body {
   padding: 2rem;
   box-shadow: 0.5px 0.5px 2px #161515;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .skill-box:hover {
   transform: translateY(-15px);
@@ -245,6 +257,8 @@ body {
   font-size: 1.8rem;
   color: #fff;
   margin: 2rem 0;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .skill-heading {
@@ -304,13 +318,14 @@ body {
   display: inline-block;
 }
 .project__box {
+  cursor: pointer;
   padding: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   margin-bottom: 5rem;
   transition: all 0.3s ease-in-out;
   &:hover {
-    outline: 1px solid #333030;
+    /* outline: 1px solid #333030; */
     transform: scale(0.94);
   }
 }
@@ -318,13 +333,12 @@ body {
   text-align: center;
 }
 /* -------------------------FOOTER SECTION------------------------------------- */
-.footer {
+.contact {
   background-image: linear-gradient(to right bottom, #0b0b0b, #333030);
   padding: 4rem 0;
 }
-.footer__container {
+.contact__container {
   max-width: 100rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 
   margin: 0 auto;
 }
@@ -334,7 +348,7 @@ body {
   align-items: center;
   gap: 3.2rem;
 }
-.footer__icon {
+.contact__icon {
   height: 6rem;
   width: 6rem;
 }
@@ -343,7 +357,9 @@ body {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  padding: 4rem 0;
+  background-image: linear-gradient(to right bottom, #333030, #0b0b0b);
+  opacity: 0.5;
+  padding: 2rem 0;
 }
 /* ----------------------MEDIA QUERY-------------------------- */
 @media (max-width: 56.25em) {
@@ -464,7 +480,7 @@ body {
   .btn__text {
     font-size: 1.5rem;
   }
-  .footer__icon {
+  .contact__icon {
     width: 4rem;
     height: 4rem;
   }
