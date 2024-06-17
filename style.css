@@ -17,6 +17,17 @@ html {
 body {
   overflow-x: hidden;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 111;
+  background-image: linear-gradient(to right bottom, #0b0b0b, #333030);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 2rem 0 rgba(#0b0b0b, 0.8);
+}
 .mobile-navbar-btn {
   display: none;
   background-color: transparent;
@@ -50,14 +61,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10rem;
+  /* height: 10rem; */
 }
 
 .logo {
   font-family: "Fredericka the Great", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 6.8rem;
+  font-size: 5rem;
   color: #ff004f;
   z-index: 1320000;
 }
