@@ -175,6 +175,7 @@ body {
 
 .about-text-box {
   max-width: 60rem;
+  margin-left: 2rem;
 }
 
 .photo {
@@ -191,7 +192,7 @@ body {
   font-weight: 400;
   border-bottom: 1px solid #ff004f;
   display: inline-block;
-  margin: 4rem 2rem;
+  margin: 4rem 0;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -470,7 +471,10 @@ span {
     flex-direction: column;
   }
   .heading__secondry {
-    margin: 2.5rem 2rem;
+    margin: 2.5rem 0;
+  }
+  .margin-left {
+    margin-left: 2rem;
   }
   .about-text-box {
     padding: 0 2rem;
