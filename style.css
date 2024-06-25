@@ -191,7 +191,7 @@ body {
   font-weight: 400;
   border-bottom: 1px solid #ff004f;
   display: inline-block;
-  margin: 4rem 0;
+  margin: 4rem 2rem;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -305,6 +305,8 @@ span {
     background-color: #ff004f;
   }
 }
+
+/* ------------------------PROJECT SECTION ------------------------------ */
 .section-project {
   background-image: linear-gradient(to right bottom, #0b0b0b, #333030);
 }
@@ -315,8 +317,13 @@ span {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 3.2rem;
+}
+.weight {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-left: 2rem;
 }
 .project_heading {
   padding: 0.5rem 2rem;
@@ -463,7 +470,7 @@ span {
     flex-direction: column;
   }
   .heading__secondry {
-    margin: 2.5rem 0;
+    margin: 2.5rem 2rem;
   }
   .about-text-box {
     padding: 0 2rem;
