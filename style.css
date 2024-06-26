@@ -34,6 +34,7 @@ body::-webkit-scrollbar-track {
   width: 100%;
   padding: 0 2rem;
   z-index: 111;
+  opacity: 0.9;
   background-image: linear-gradient(to right bottom, #0b0b0b, #333030);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 2rem 0 rgba(#0b0b0b, 0.8);
