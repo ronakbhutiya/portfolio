@@ -45,12 +45,17 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
   border: 1px solid #fff;
   z-index: 10000;
+  border-radius: 1rem;
 }
 .mobile-nav-icon {
   color: rgb(179, 179, 183);
   width: 4.5rem;
   height: 4.5rem;
   background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.mobile-nav-icon:hover {
+  transform: rotate(360deg);
 }
 .mobile-nav-icon[name="close-outline"] {
   display: none;
@@ -98,6 +103,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
+  border-bottom: 1px solid transparent;
 }
 
 .nav-link:hover,
@@ -324,6 +330,7 @@ span {
 }
 .project__img {
   width: 100%;
+  border-radius: 0.2rem;
   /* overflow: hidden; */
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -456,7 +463,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    /* opacity: 0; */
     z-index: 10;
     transition: all 0.5s ease-in-out;
     transform: translateX(100%);
@@ -467,6 +474,7 @@ span {
     pointer-events: auto;
     visibility: visible;
     opacity: 1;
+
     transform: translateX(0);
   }
   .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
@@ -488,7 +496,7 @@ span {
     margin-left: 2rem;
   }
   .about-text-box {
-    padding: 0 2rem;
+    padding: 0 2rem 0 0;
   }
   .logo {
     font-size: 5rem;
