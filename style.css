@@ -111,6 +111,10 @@ body::-webkit-scrollbar-track {
   color: #ff004f;
   border-bottom: 1px solid #ff004f;
 }
+.nav-active {
+  color: #ff004f !important;
+  border-bottom: 1px solid #ff004f !important;
+}
 
 .heading-center {
   position: absolute;
@@ -366,6 +370,7 @@ span {
     transform: scale(0.94);
   }
 }
+
 .center {
   text-align: center;
 }

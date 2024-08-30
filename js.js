@@ -1,5 +1,7 @@
 const nav_header = document.querySelector(".header-nav");
 const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const navLink = document.querySelectorAll(".nav-link");
+const ul = document.querySelector(".nav-list");
 mobile_nav.addEventListener("click", () => {
   nav_header.classList.toggle("active");
 });
@@ -19,3 +21,9 @@ const observer = new IntersectionObserver(
   }
 );
 observer.observe(header);
+ul.addEventListener("click", function (e) {
+  const click = e.target.closest(".nav-link");
+  navLink.forEach((element) => element.classList.remove("nav-active"));
+  if (!click) return;
+  click.classList.add("nav-active");
+});
