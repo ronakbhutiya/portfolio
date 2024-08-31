@@ -388,11 +388,11 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3.2rem;
+  gap: 1.5rem;
 }
 .contact__icon {
-  height: 6rem;
-  width: 6rem;
+  height: 5.5rem;
+  width: 5.5rem;
 }
 .footer__text {
   font-size: 2rem;
